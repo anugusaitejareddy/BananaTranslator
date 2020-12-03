@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <script>
+        var url = "https://api.funtranslations.com/translate/shakespeare.json";
+        async function translateText(text)
+        {
+            url = url + "?text="+text; 
+            const response = await fetch(url);
+            const object = await response.json();
+            console.log(object.contents.translated);
+        }
+        translateText("what are you up to?");
+    </script>
+</body>
+</html>
