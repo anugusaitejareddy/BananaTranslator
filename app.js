@@ -1,22 +1,22 @@
-var url = "	https://api.funtranslations.com/translate/yoda.json";
+var url = "https://api.funtranslations.com/translate/minion.json";
 
 let translateBtn = document.getElementById("translate-btn")
 let translatedTextarea = document.getElementById("translated-output");
 
-translateBtn.addEventListener("click", trasnlateBtnClick);
-
-function trasnlateBtnClick()
+function getTranslationURL(text)
 {
-    let userInput = document.getElementById("user-input").value;
-    // translatedTextarea.value = 
-    translateText(userInput);
+    return url + "?" + "text=" + text;
 }
 
-
-async function translateText(userInput)
+async function clickHandler()
 {
-    url = url + "?text="+userInput; 
-    const response = await fetch(url);
+    const userInput = document.getElementById("user-input").value;
+    const response = await fetch(getTranslationURL(userInput));
     const object = await response.json();
-    console.log (object);
+    console.log(object);
+    translatedTextarea.value =  object.contents.translated;
 }
+
+translateBtn.addEventListener("click", clickHandler);
+
+

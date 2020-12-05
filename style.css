@@ -24,6 +24,9 @@ main textarea{
 }
 #translated-output{
     overflow: scroll;
+    font-family: inherit;
+    font-size: 1.5rem;
+    padding: 5px;
 }
 #user-input{
     font-family: inherit;
