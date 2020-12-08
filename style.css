@@ -6,6 +6,10 @@
 }
 body{
     font-family: 'Caveat', cursive;
+    background-image: url("https://images.unsplash.com/photo-1515041219749-89347f83291a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=967&q=80");
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
 }
 nav{
     background-color: #F2C42C;
@@ -34,25 +38,21 @@ main textarea{
     padding: 5px;
 }
 #translate-btn{
-    background-color: #F2C42C;
-    color: #333;
-    padding: 1rem .5rem;
+    display: block;
+    background-color: blue;
+    color: yellow;
+    padding: 1rem .7rem;
     border: none;
-    margin: 1rem 0;
+    margin: .5rem 0 .7rem 0;
     font-family: inherit;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700;
-}
-main p{
-    font-family: inherit;
-    font-size: 1.2rem;
-    margin: .5rem 0;
 }
 footer{
     background-color: #F2C42C;
     color: #333;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 footer p{
     width: 50%;
