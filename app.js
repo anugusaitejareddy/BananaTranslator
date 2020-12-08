@@ -14,7 +14,7 @@ async function clickHandler()
     const response = await fetch(getTranslationURL(userInput));
     const object = await response.json();
     console.log(object);
-    translatedTextarea.value =  object.contents.translated;
+    translatedTextarea.value = object.contents.translated;
 }
 
 translateBtn.addEventListener("click", clickHandler);
