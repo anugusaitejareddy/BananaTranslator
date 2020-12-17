@@ -28,7 +28,6 @@ main textarea{
     margin: auto;
 }
 #translated-output{
-    overflow: scroll;
     font-family: inherit;
     font-size: 1.5rem;
     padding: 5px;
@@ -53,7 +52,10 @@ footer{
     background-color: #F2C42C;
     color: #333;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    position: absolute;
+    bottom: 0;
 }
 footer p{
     width: 100%;

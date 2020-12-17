@@ -11,17 +11,13 @@ function getTranslationURL(text)
 function errorHandler(error)
 {
     console.log(error);
-    alert("only five request are accepted per hour, please wait");
+    alert("Error Occured.");
 }
 
 async function clickHandler()
 {
     const userInput = document.getElementById("user-input").value;
     
-    // const response = await fetch(getTranslationURL(userInput));
-    // const object = await response.json();
-    // response.json().catch(errorHandler);
-
     fetch(getTranslationURL(userInput))
     .then(response => response.json)
     .then(json => {
