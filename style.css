@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 *{
     padding: 0;
     box-sizing: border-box;
@@ -55,7 +56,7 @@ footer{
     font-size: 1.6rem;
 }
 footer p{
-    width: 50%;
+    width: 100%;
     margin: auto;
     font-weight: 300;
 }
