@@ -8,6 +8,11 @@ function getTranslationURL(text)
     return url + "?" + "text=" + text;
 }
 
+function errorHandler()
+{
+    alert("Error Occured");
+}
+
 async function clickHandler()
 {
     const userInput = document.getElementById("user-input").value;
@@ -17,7 +22,7 @@ async function clickHandler()
     .then(returnedObject => {
         console.log(returnedObject);
         translatedTextarea.value = returnedObject.contents.translated;
-    }) 
+    }).catch(errorHandler);
 }
 
 translateBtn.addEventListener("click", clickHandler);
